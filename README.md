@@ -1,87 +1,83 @@
-# 🏠 Carte Loyer × Pouvoir d'achat — RMR Montréal
+# 🏠 Carte Loyer × Pouvoir d'achat --- RMR Montréal
 
-Outil interactif pour trouver le meilleur quartier selon ton salaire et ton lieu de travail.
+Outil interactif pour identifier les quartiers les plus accessibles
+selon le salaire, le lieu de travail et l'importance accordée au
+transport.
 
-## Stack
-- **Python** — scraping + calculs
-- **BeautifulSoup** — scraper Kijiji
-- **Streamlit** — dashboard web
-- **Folium** — carte interactive
-- **Nominatim** — géocodage gratuit (OpenStreetMap)
-- **Navitia.io** — temps de trajet TC réels (données GTFS STM)
-- **OpenRouteService** — fallback si Navitia indisponible
+------------------------------------------------------------------------
 
-## Installation
+## 🚀 Fonctionnalités
 
-```bash
+-   Scraping des annonces Kijiji
+-   Agrégation des loyers par quartier
+-   Carte interactive avec code couleur :
+    -   🟢 favorable
+    -   🟠 compromis
+    -   🔴 défavorable
+-   Score personnalisable :
+    -   salaire
+    -   temps de trajet max
+    -   \% revenu max pour le loyer
+    -   importance transport vs budget
+-   Bonus simple de proximité métro
+-   Export CSV des résultats
+
+------------------------------------------------------------------------
+
+## 🧠 Stack technique
+
+-   Python
+-   BeautifulSoup
+-   Streamlit
+-   Folium
+-   Pandas
+-   Nominatim (OpenStreetMap)
+-   GeoJSON quartiers RMR
+
+------------------------------------------------------------------------
+
+## ⚙️ Installation
+
+``` bash
 pip install -r requirements.txt
 ```
 
-## Étape 1 — Scraper les loyers
+------------------------------------------------------------------------
 
-```bash
+## 📥 Scraper les loyers
+
+``` bash
 cd scraper
 python kijiji_scraper.py
 ```
 
-Génère `data/kijiji_cache.json` et `data/loyers_par_quartier.json`.
-Stratégie delta : ne re-scrape jamais ce qui est déjà en cache.
+------------------------------------------------------------------------
 
-## Étape 2 — Clés API gratuites
+## 🖥️ Lancer le dashboard
 
-### Navitia.io (temps de trajet TC réels)
-1. Créer un compte sur https://navitia.io
-2. Copier le token dans `scraper/transit_scorer.py` → `NAVITIA_TOKEN`
-
-### OpenRouteService (fallback)
-1. Créer un compte sur https://openrouteservice.org/dev/#/signup
-2. Copier la clé dans `scraper/transit_scorer.py` → `ORS_API_KEY`
-
-## Étape 3 — Lancer le dashboard
-
-```bash
-streamlit run dashboard/app.py
+``` bash
+python -m streamlit run dashboard/app.py
 ```
 
-Ouvre http://localhost:8501
+Puis ouvrir : http://localhost:8501
 
-## Structure
+------------------------------------------------------------------------
 
-```
-loyer-rmr/
-├── scraper/
-│   ├── kijiji_scraper.py     # Collecte les annonces Kijiji
-│   └── transit_scorer.py     # Calcul temps de trajet + score
-├── dashboard/
-│   └── app.py                # Interface Streamlit
-├── data/
-│   ├── kijiji_cache.json     # Cache annonces (ne pas supprimer!)
-│   ├── geocode_cache.json    # Cache géocodage Nominatim
-│   ├── transit_cache.json    # Cache temps de trajet
-│   └── loyers_par_quartier.json  # Données agrégées
-└── requirements.txt
-```
+## 📊 Logique du score
 
-## Logique du score
+Score = (budget × (1 - poids_transport)) + (transport × poids_transport)
 
-```
-Score (0-100) = loyer_score × 60% + trajet_score × 40%
+------------------------------------------------------------------------
 
-loyer_score  = basé sur ratio loyer/revenu net vs seuil configuré (défaut 33%)
-trajet_score = 100 si < max_trajet, pénalité progressive au-delà
+## ⚠️ Limites
 
-🟢 Vert   : score ≥ 65
-🟠 Orange : score 40-65
-🔴 Rouge  : score < 40
-```
+-   Données Kijiji non exhaustives
+-   Certaines annonces sans adresse
+-   Temps de trajet estimé (pas STM réel complet)
 
-## Utilisation syndicat de logement
+------------------------------------------------------------------------
 
-Les données CSV exportables permettent de :
-- Documenter l'inaccessibilité au logement par tranche de revenu
-- Illustrer le "rayon de vie" réel selon différents salaires
-- Croiser avec les données de demande d'augmentation de loyer (TAL)
-- Produire des visualisations pour négociations et mémoires
+## 👨‍💻 Auteur
 
----
-Données Kijiji scrappées à titre informatif. Compléter avec données SCHL pour validation.
+Antoine Toenz\
+Email : antoine@toenz.com
