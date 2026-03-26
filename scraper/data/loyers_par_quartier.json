@@ -1,40 +1,82 @@
 {
   "Ville-Marie": {
-    "loyer_median": 1725,
-    "loyer_moyen": 1806,
-    "loyer_min": 895.0,
+    "loyer_median": 1665,
+    "loyer_moyen": 1753,
+    "loyer_p25": 1475,
+    "loyer_p75": 2100,
+    "loyer_min": 850.0,
     "loyer_max": 2945.0,
-    "nb_annonces": 56,
-    "lat": 45.505989,
-    "lon": -73.566696,
+    "ecart_type": 475,
+    "nb_annonces": 65,
+    "lat": 45.506195,
+    "lon": -73.566609,
     "ville": "Montréal",
     "types": {
-      "1 1/2": 42,
+      "1 1/2": 50,
       "4 1/2": 4,
       "2 1/2": 2,
       "5 1/2": 3,
       "3 1/2": 1,
       "6 1/2": 1
+    },
+    "loyer_par_type": {
+      "1 1/2": 1622,
+      "4 1/2": 1550,
+      "2 1/2": 1938,
+      "5 1/2": 2100
     }
   },
   "Le Sud-Ouest": {
     "loyer_median": 2018,
-    "loyer_moyen": 2130,
+    "loyer_moyen": 2078,
+    "loyer_p25": 1770,
+    "loyer_p75": 2500,
     "loyer_min": 1430.0,
     "loyer_max": 3350.0,
-    "nb_annonces": 10,
-    "lat": 45.487063,
-    "lon": -73.566954,
+    "ecart_type": 547,
+    "nb_annonces": 12,
+    "lat": 45.487516,
+    "lon": -73.566427,
     "ville": "Montréal",
     "types": {
-      "1 1/2": 10
+      "1 1/2": 11,
+      "6 1/2": 1
+    },
+    "loyer_par_type": {
+      "1 1/2": 1845
+    }
+  },
+  "Lachine": {
+    "loyer_median": 1850,
+    "loyer_moyen": 1755,
+    "loyer_p25": 1495,
+    "loyer_p75": 1890,
+    "loyer_min": 1330.0,
+    "loyer_max": 2500.0,
+    "ecart_type": 356,
+    "nb_annonces": 11,
+    "lat": 45.435257,
+    "lon": -73.687904,
+    "ville": "Montréal",
+    "types": {
+      "3 1/2": 1,
+      "2 1/2": 1,
+      "5 1/2": 1,
+      "4 1/2": 1,
+      "1 1/2": 6
+    },
+    "loyer_par_type": {
+      "1 1/2": 1850
     }
   },
   "Saint-Laurent": {
     "loyer_median": 1382,
-    "loyer_moyen": 1531,
+    "loyer_moyen": 1458,
+    "loyer_p25": 1300,
+    "loyer_p75": 1825,
     "loyer_min": 920.0,
     "loyer_max": 2725.0,
+    "ecart_type": 533,
     "nb_annonces": 10,
     "lat": 45.511561,
     "lon": -73.690098,
@@ -42,95 +84,115 @@
     "types": {
       "3 1/2": 2,
       "1 1/2": 5
-    }
-  },
-  "Lachine": {
-    "loyer_median": 1850,
-    "loyer_moyen": 1830,
-    "loyer_min": 1385.0,
-    "loyer_max": 2500.0,
-    "nb_annonces": 10,
-    "lat": 45.435432,
-    "lon": -73.687257,
-    "ville": "Montréal",
-    "types": {
-      "3 1/2": 1,
-      "2 1/2": 1,
-      "5 1/2": 1,
-      "4 1/2": 1,
-      "1 1/2": 5
+    },
+    "loyer_par_type": {
+      "3 1/2": 1598,
+      "1 1/2": 1560
     }
   },
   "Côte-Saint-Luc": {
     "loyer_median": 2342,
-    "loyer_moyen": 2428,
+    "loyer_moyen": 2358,
+    "loyer_p25": 1900,
+    "loyer_p75": 2775,
     "loyer_min": 1745.0,
     "loyer_max": 3675.0,
+    "ecart_type": 637,
     "nb_annonces": 10,
     "lat": 45.47889,
     "lon": -73.662765,
     "ville": "Montréal",
     "types": {
       "1 1/2": 10
+    },
+    "loyer_par_type": {
+      "1 1/2": 2342
     }
   },
-  "Côte-des-Neiges-Notre-Dame-de-Grâce": {
+  "Côte-des-Neiges–Notre-Dame-de-Grâce": {
     "loyer_median": 1229,
     "loyer_moyen": 1274,
+    "loyer_p25": 1195,
+    "loyer_p75": 1350,
     "loyer_min": 995.0,
     "loyer_max": 1800.0,
+    "ecart_type": 230,
     "nb_annonces": 9,
     "lat": 45.496663,
     "lon": -73.626738,
     "ville": "Montréal",
     "types": {
       "1 1/2": 7
+    },
+    "loyer_par_type": {
+      "1 1/2": 1250
     }
   },
   "LaSalle": {
     "loyer_median": 1555,
     "loyer_moyen": 1664,
+    "loyer_p25": 1450,
+    "loyer_p75": 1950,
     "loyer_min": 1295.0,
     "loyer_max": 2330.0,
+    "ecart_type": 356,
     "nb_annonces": 8,
     "lat": 45.429903,
     "lon": -73.633492,
     "ville": "Montréal",
     "types": {
       "1 1/2": 7
+    },
+    "loyer_par_type": {
+      "1 1/2": 1620
     }
   },
   "Le Plateau-Mont-Royal": {
     "loyer_median": 1368,
     "loyer_moyen": 1314,
+    "loyer_p25": 1145,
+    "loyer_p75": 1650,
     "loyer_min": 800.0,
     "loyer_max": 1745.0,
+    "ecart_type": 311,
     "nb_annonces": 8,
     "lat": 45.520161,
     "lon": -73.572969,
     "ville": "Montréal",
     "types": {
       "1 1/2": 7
+    },
+    "loyer_par_type": {
+      "1 1/2": 1350
     }
   },
   "Outremont": {
     "loyer_median": 2200,
     "loyer_moyen": 2251,
+    "loyer_p25": 1580,
+    "loyer_p75": 2600,
     "loyer_min": 1460.0,
     "loyer_max": 3710.0,
+    "ecart_type": 759,
     "nb_annonces": 7,
     "lat": 45.52324,
     "lon": -73.616946,
     "ville": "Montréal",
     "types": {
       "1 1/2": 7
+    },
+    "loyer_par_type": {
+      "1 1/2": 2200
     }
   },
-  "Rosemont-La Petite-Patrie": {
+  "Rosemont–La Petite-Patrie": {
     "loyer_median": 1445,
     "loyer_moyen": 1339,
+    "loyer_p25": 1145,
+    "loyer_p75": 1630,
     "loyer_min": 800.0,
     "loyer_max": 1675.0,
+    "ecart_type": 366,
     "nb_annonces": 5,
     "lat": 45.548474,
     "lon": -73.583377,
@@ -138,45 +200,85 @@
     "types": {
       "1 1/2": 3,
       "3 1/2": 1
+    },
+    "loyer_par_type": {
+      "1 1/2": 1445
     }
   },
-  "Rivière-des-Prairies-Pointe-aux-Trembles": {
+  "Rivière-des-Prairies–Pointe-aux-Trembles": {
     "loyer_median": 1198,
     "loyer_moyen": 1378,
+    "loyer_p25": 1195,
+    "loyer_p75": 2124,
     "loyer_min": 995.0,
     "loyer_max": 2124.0,
+    "ecart_type": 506,
     "nb_annonces": 4,
     "lat": 45.660062,
     "lon": -73.523015,
     "ville": "Montréal",
     "types": {
       "1 1/2": 4
+    },
+    "loyer_par_type": {
+      "1 1/2": 1198
+    }
+  },
+  "Mercier–Hochelaga-Maisonneuve": {
+    "loyer_median": 1675,
+    "loyer_moyen": 1525,
+    "loyer_p25": 1050,
+    "loyer_p75": 1850,
+    "loyer_min": 1050.0,
+    "loyer_max": 1850.0,
+    "ecart_type": 421,
+    "nb_annonces": 3,
+    "lat": 45.558149,
+    "lon": -73.540537,
+    "ville": "Montréal",
+    "types": {
+      "1 1/2": 3
+    },
+    "loyer_par_type": {
+      "1 1/2": 1675
     }
   },
   "Ahuntsic-Cartierville": {
     "loyer_median": 1300,
     "loyer_moyen": 1393,
+    "loyer_p25": 1295,
+    "loyer_p75": 1585,
     "loyer_min": 1295.0,
     "loyer_max": 1585.0,
+    "ecart_type": 166,
     "nb_annonces": 3,
     "lat": 45.535743,
     "lon": -73.692814,
     "ville": "Montréal",
     "types": {
       "1 1/2": 2
+    },
+    "loyer_par_type": {
+      "1 1/2": 1440
     }
   },
-  "Mercier-Hochelaga-Maisonneuve": {
-    "loyer_median": 1362,
-    "loyer_moyen": 1362,
-    "loyer_min": 1050.0,
-    "loyer_max": 1675.0,
+  "Villeray–Saint-Michel–Parc-Extension": {
+    "loyer_median": 1872,
+    "loyer_moyen": 1872,
+    "loyer_p25": 1750,
+    "loyer_p75": 1995,
+    "loyer_min": 1750.0,
+    "loyer_max": 1995.0,
+    "ecart_type": 173,
     "nb_annonces": 2,
-    "lat": 45.561161,
-    "lon": -73.536905,
+    "lat": 45.545351,
+    "lon": -73.614618,
     "ville": "Montréal",
     "types": {
       "1 1/2": 2
+    },
+    "loyer_par_type": {
+      "1 1/2": 1872
     }
   }
 }

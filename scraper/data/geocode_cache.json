@@ -430,5 +430,107 @@
   "4089 avenue de chateaubriand": [
     45.5225584,
     -73.5753582
+  ],
+  "Le Sud-Ouest, Montréal, Québec, Canada": [
+    45.484268,
+    -73.5649867
+  ],
+  "Côte-Saint-Luc, Montréal, Québec, Canada": [
+    45.4772716,
+    -73.6637524
+  ],
+  "Côte-des-Neiges-Notre-Dame-de-Grâce, Montréal, Québec, Canada": [
+    45.4821002,
+    -73.6249638
+  ],
+  "LaSalle, Montréal, Québec, Canada": [
+    45.4325141,
+    -73.6292667
+  ],
+  "Le Plateau-Mont-Royal, Montréal, Québec, Canada": [
+    45.5218361,
+    -73.5821731
+  ],
+  "Outremont, Montréal, Québec, Canada": [
+    45.5186167,
+    -73.6068856
+  ],
+  "Rosemont-La Petite-Patrie, Montréal, Québec, Canada": [
+    45.5507465,
+    -73.5822897
+  ],
+  "Rivière-des-Prairies-Pointe-aux-Trembles, Montréal, Québec, Canada": [
+    45.6606073,
+    -73.5253145
+  ],
+  "Ahuntsic-Cartierville, Montréal, Québec, Canada": [
+    45.5418621,
+    -73.6803193
+  ],
+  "Mercier-Hochelaga-Maisonneuve, Montréal, Québec, Canada": [
+    45.5789646,
+    -73.5384465
+  ],
+  "1237 Rue De Bullion, Montreal, QC, Québec, Canada": [
+    45.5109395,
+    -73.5618834
+  ],
+  "1296 Rue Alexandre-DeSève, Montréal, QC H2L 2V1, Québec, Canada": [
+    45.5207745,
+    -73.5531701
+  ],
+  "7200 Boulevard des Galeries d'Anjou, Anjou, QC, Québec, Canada": [
+    45.5960922,
+    -73.5606714
+  ],
+  "Montreal, QC H3G 0G9, Québec, Canada": [
+    45.5031824,
+    -73.5698065
+  ],
+  "7560 Rue Chabot, Montreal, QC, Québec, Canada": [
+    45.5514835,
+    -73.6117495
+  ],
+  "1 Blvd. De Maisonneuve Ouest, Montréal, QC H2X 0E3, Canada, Québec, Canada": null,
+  "2420 Bd Pie-IX, Montréal, QC H1V 2E5, Québec, Canada": [
+    45.5521257,
+    -73.5478001
+  ],
+  "Montreal, QC H2E 1H3, Québec, Canada": [
+    45.5031824,
+    -73.5698065
+  ],
+  "6525 Rue Sherbrooke O, Montréal, QC H4B 1N4, Québec, Canada": null,
+  "Montréal, QC H1V 2E2, Québec, Canada": [
+    45.5031824,
+    -73.5698065
+  ],
+  "Côte-des-Neiges–Notre-Dame-de-Grâce, Montréal, Québec, Canada": [
+    45.4821002,
+    -73.6249638
+  ],
+  "Rosemont–La Petite-Patrie, Montréal, Québec, Canada": [
+    45.5507465,
+    -73.5822897
+  ],
+  "Rivière-des-Prairies–Pointe-aux-Trembles, Montréal, Québec, Canada": [
+    45.6606073,
+    -73.5253145
+  ],
+  "Mercier–Hochelaga-Maisonneuve, Montréal, Québec, Canada": [
+    45.5789646,
+    -73.5384465
+  ],
+  "Villeray–Saint-Michel–Parc-Extension, Montréal, Québec, Canada": [
+    45.5371039,
+    -73.6251264
+  ],
+  "Montréal, QC H2E 2H6, Québec, Canada": [
+    45.5031824,
+    -73.5698065
+  ],
+  "Montréal, QC H1L 4S3, Québec, Canada": [
+    45.5031824,
+    -73.5698065
   ]
 }
