@@ -1,6 +1,8 @@
 """
 Dashboard — Carte Loyer vs Pouvoir d'achat RMR Montréal
-Lance avec : python -m streamlit run dashboard/app.py
+Modes :
+- Quartiers
+- Fondu (heatmap)
 """
 
 import json
@@ -11,34 +13,29 @@ from pathlib import Path
 import folium
 import pandas as pd
 import streamlit as st
+from folium.plugins import HeatMap
 from streamlit_folium import st_folium
 
 BASE_DIR = Path(__file__).resolve().parents[1]
 SCRAPER_DIR = BASE_DIR / "scraper"
-
 sys.path.append(str(SCRAPER_DIR))
 
 from transit_scorer import (
+    GEOCODE_CACHE_PATH,
     compute_all_scores,
     geocode_address,
     load_json_cache,
-    GEOCODE_CACHE_PATH,
 )
 
-
-# Paths
 LOYERS_PATH = SCRAPER_DIR / "data" / "loyers_par_quartier.json"
 GEOJSON_PATH = SCRAPER_DIR / "data" / "quartiers_rmr.geojson.json"
-
-# ── Page config ───────────────────────────────────────────────────────────────
+CACHE_PATH = SCRAPER_DIR / "data" / "kijiji_cache.json"
 
 st.set_page_config(
     page_title="Carte Loyer Montréal",
     page_icon="🏠",
     layout="wide",
 )
-
-# ── CSS ───────────────────────────────────────────────────────────────────────
 
 st.markdown("""
 <style>
@@ -69,13 +66,12 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# ── Utils ─────────────────────────────────────────────────────────────────────
-
 COULEUR_MAP = {
     "vert": "#39d353",
     "orange": "#ff9800",
     "rouge": "#f44336",
 }
+
 
 def load_json(path: Path):
     if not path.exists():
@@ -83,15 +79,23 @@ def load_json(path: Path):
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
+
 def load_loyers() -> dict:
     data = load_json(LOYERS_PATH)
     return data if isinstance(data, dict) else {}
+
 
 def load_geojson() -> dict:
     data = load_json(GEOJSON_PATH)
     if not isinstance(data, dict):
         return {"type": "FeatureCollection", "features": []}
     return data
+
+
+def load_cache() -> dict:
+    data = load_json(CACHE_PATH)
+    return data if isinstance(data, dict) else {}
+
 
 def normalize_name(name: str) -> str:
     if not name:
@@ -107,6 +111,7 @@ def normalize_name(name: str) -> str:
         .strip()
     )
 
+
 def get_feature_name(feature: dict) -> str:
     props = feature.get("properties", {})
     return (
@@ -119,6 +124,7 @@ def get_feature_name(feature: dict) -> str:
         or "Inconnu"
     )
 
+
 def find_score_data(quartier: str, scores: dict) -> dict | None:
     if quartier in scores:
         return scores[quartier]
@@ -129,6 +135,43 @@ def find_score_data(quartier: str, scores: dict) -> dict | None:
             return v
     return None
 
+
+def filter_loyers_by_type(loyers: dict, selected_types: list[str], min_annonces: int = 3) -> dict:
+    if not loyers:
+        return {}
+
+    if not selected_types:
+        return loyers
+
+    filtered = {}
+    for quartier, data in loyers.items():
+        types_counts = data.get("types", {})
+        nb_match = sum(types_counts.get(t, 0) for t in selected_types)
+        if nb_match >= min_annonces:
+            filtered[quartier] = data
+    return filtered
+
+
+def filter_cache_points(cache: dict, selected_types: list[str]) -> list[dict]:
+    points = []
+
+    for listing in cache.values():
+        lat = listing.get("lat")
+        lon = listing.get("lon")
+        q = listing.get("quartier_polygonal")
+        t = listing.get("type_logement")
+
+        if lat is None or lon is None or not q:
+            continue
+
+        if selected_types and t not in selected_types:
+            continue
+
+        points.append(listing)
+
+    return points
+
+
 def style_from_score(feature: dict, scores: dict):
     quartier = get_feature_name(feature)
     data = find_score_data(quartier, scores)
@@ -136,7 +179,7 @@ def style_from_score(feature: dict, scores: dict):
     if not data:
         return {
             "fillColor": "#232838",
-            "color": "#7d8596",
+            "color": "#2a3144",
             "weight": 1,
             "fillOpacity": 0.10,
         }
@@ -146,9 +189,10 @@ def style_from_score(feature: dict, scores: dict):
     return {
         "fillColor": couleur,
         "color": couleur,
-        "weight": 2,
+        "weight": 1,
         "fillOpacity": 0.60,
     }
+
 
 def build_popup_html(quartier: str, data: dict | None) -> str:
     if not data:
@@ -166,9 +210,12 @@ def build_popup_html(quartier: str, data: dict | None) -> str:
     annonces = data.get("nb_annonces", "?")
     loyer = data.get("loyer_median", "?")
     metro_bonus = data.get("metro_bonus", 0)
+    types = data.get("types", {})
+
+    types_text = ", ".join([f"{k}: {v}" for k, v in sorted(types.items())]) if types else "N/A"
 
     return f"""
-    <div style="font-family:sans-serif;min-width:260px">
+    <div style="font-family:sans-serif;min-width:280px">
         <h4 style="margin:0 0 8px;color:#333">{quartier}</h4>
         <table style="width:100%;border-collapse:collapse">
             <tr><td style="color:#666">Loyer médian</td><td><strong>{loyer} $/mois</strong></td></tr>
@@ -177,11 +224,44 @@ def build_popup_html(quartier: str, data: dict | None) -> str:
             <tr><td style="color:#666">Bonus métro</td><td><strong>+{metro_bonus}</strong></td></tr>
             <tr><td style="color:#666">Score</td><td><strong style="color:{couleur}">{score}/100</strong></td></tr>
             <tr><td style="color:#666">Annonces</td><td>{annonces}</td></tr>
+            <tr><td style="color:#666">Types repérés</td><td>{types_text}</td></tr>
         </table>
     </div>
     """
 
-def make_map(scores: dict, geojson_data: dict, workplace_address: str | None = None) -> folium.Map:
+
+def build_heat_points(points: list[dict], scores: dict) -> list[list[float]]:
+    """
+    HeatMap attend [lat, lon, weight]
+    """
+    heat_points = []
+
+    for listing in points:
+        lat = listing.get("lat")
+        lon = listing.get("lon")
+        quartier = listing.get("quartier_polygonal")
+        score_data = find_score_data(quartier, scores)
+
+        if lat is None or lon is None:
+            continue
+
+        if score_data:
+            weight = max(0.05, min(1.0, score_data.get("score", 0) / 100))
+        else:
+            weight = 0.20
+
+        heat_points.append([lat, lon, weight])
+
+    return heat_points
+
+
+def make_map(
+    scores: dict,
+    geojson_data: dict,
+    cache_points: list[dict],
+    map_mode: str,
+    workplace_address: str | None = None,
+) -> folium.Map:
     m = folium.Map(
         location=[45.5017, -73.5673],
         zoom_start=10,
@@ -199,6 +279,18 @@ def make_map(scores: dict, geojson_data: dict, workplace_address: str | None = N
                 icon=folium.Icon(color="blue", icon="briefcase", prefix="fa"),
             ).add_to(m)
 
+    if map_mode == "Fondu":
+        heat_points = build_heat_points(cache_points, scores)
+        if heat_points:
+            HeatMap(
+                heat_points,
+                min_opacity=0.25,
+                radius=32,
+                blur=28,
+                max_zoom=12,
+            ).add_to(m)
+        return m
+
     for feature in geojson_data.get("features", []):
         quartier = get_feature_name(feature)
         data = find_score_data(quartier, scores)
@@ -207,28 +299,26 @@ def make_map(scores: dict, geojson_data: dict, workplace_address: str | None = N
             data=feature,
             style_function=lambda feat, scores=scores: style_from_score(feat, scores),
             highlight_function=lambda feat: {
-                "weight": 3,
+                "weight": 2,
                 "fillOpacity": 0.75,
             },
             tooltip=folium.Tooltip(quartier),
-            popup=folium.Popup(build_popup_html(quartier, data), max_width=300),
+            popup=folium.Popup(build_popup_html(quartier, data), max_width=320),
         )
         gj.add_to(m)
 
     return m
 
-# ── Header ────────────────────────────────────────────────────────────────────
 
 st.markdown("# 🏠 Carte Loyer × Pouvoir d'achat — RMR Montréal")
 st.markdown("*Entrez votre salaire et votre lieu de travail pour voir les zones les plus soutenables.*")
 st.divider()
 
-# ── Data ──────────────────────────────────────────────────────────────────────
-
-loyers = load_loyers()
+loyers_raw = load_loyers()
 geojson_data = load_geojson()
+cache_raw = load_cache()
 
-if not loyers:
+if not loyers_raw:
     st.error("Fichier loyers_par_quartier.json introuvable ou vide.")
     st.stop()
 
@@ -236,24 +326,24 @@ if not geojson_data.get("features"):
     st.error("Fichier quartiers_rmr.geojson introuvable ou vide.")
     st.stop()
 
-# ── Session state ─────────────────────────────────────────────────────────────
-
 if "scores" not in st.session_state:
     st.session_state.scores = None
 if "workplace" not in st.session_state:
     st.session_state.workplace = None
 if "salaire" not in st.session_state:
     st.session_state.salaire = None
-
-# ── Sidebar ───────────────────────────────────────────────────────────────────
+if "filtered_points" not in st.session_state:
+    st.session_state.filtered_points = []
+if "map_mode" not in st.session_state:
+    st.session_state.map_mode = "Quartiers"
 
 with st.sidebar:
     st.markdown("## ⚙️ Vos paramètres")
 
     salaire = st.slider(
         "💰 Salaire annuel brut",
-        min_value=30000,
-        max_value=150000,
+        min_value=10000,
+        max_value=200000,
         value=65000,
         step=1000,
         format="$%d",
@@ -282,44 +372,48 @@ with st.sidebar:
     )
 
     poids_transport = st.slider(
-    "🚇 Importance transport (%)",
-    min_value=0,
-    max_value=100,
-    value=40,
-    step=5,
+        "🚇 Importance transport (%)",
+        min_value=0,
+        max_value=100,
+        value=40,
+        step=5,
+    )
+
+    st.caption(f"{100 - poids_transport}% budget / {poids_transport}% transport")
+
+    types_logement = st.multiselect(
+        "🏠 Type de logement",
+        ["1 1/2", "2 1/2", "3 1/2", "4 1/2", "5 1/2", "6 1/2"],
+        default=["3 1/2", "4 1/2", "5 1/2"],
+    )
+
+    min_annonces = st.slider(
+        "📊 Minimum d'annonces par quartier",
+        min_value=1,
+        max_value=10,
+        value=2,
+        step=1,
+    )
+
+    map_mode = st.radio(
+        "🗺️ Mode carte",
+        ["Quartiers", "Fondu"],
+        index=0,
     )
 
     calculer = st.button("Calculer", use_container_width=True)
-
-# ── Calcul ────────────────────────────────────────────────────────────────────
-
-if calculer and workplace:
-    with st.spinner("Calcul en cours..."):
-        try:
-            scores = compute_all_scores(
-                quartiers=loyers,
-                workplace_address=workplace,
-                salaire_annuel=salaire,
-                max_trajet_min=max_trajet,
-                ratio_max=ratio_max / 100,
-                poids_transport=poids_transport / 100, 
-            )
-            st.session_state.scores = scores
-            st.session_state.workplace = workplace
-            st.session_state.salaire = salaire
-        except Exception as e:
-            st.error(f"Erreur : {e}")
-
-# ── Layout ────────────────────────────────────────────────────────────────────
 
 col_map, col_stats = st.columns([3, 1])
 
 with col_map:
     current_scores = st.session_state.scores if st.session_state.scores else {}
+    current_points = st.session_state.filtered_points if st.session_state.filtered_points else []
 
     m = make_map(
         current_scores,
         geojson_data=geojson_data,
+        cache_points=current_points,
+        map_mode=st.session_state.map_mode,
         workplace_address=st.session_state.workplace if st.session_state.scores else None,
     )
 
@@ -375,7 +469,35 @@ with col_stats:
     else:
         st.info("Renseigne tes paramètres puis clique sur Calculer.")
 
-# ── Tableau ───────────────────────────────────────────────────────────────────
+if calculer and workplace:
+    loyers = filter_loyers_by_type(
+        loyers_raw,
+        selected_types=types_logement,
+        min_annonces=min_annonces,
+    )
+    filtered_points = filter_cache_points(cache_raw, selected_types=types_logement)
+
+    if not loyers:
+        st.warning("Aucun quartier avec assez d'annonces pour ce type de logement.")
+    else:
+        with st.spinner("Calcul en cours..."):
+            try:
+                scores = compute_all_scores(
+                    quartiers=loyers,
+                    workplace_address=workplace,
+                    salaire_annuel=salaire,
+                    max_trajet_min=max_trajet,
+                    ratio_max=ratio_max / 100,
+                    poids_transport=poids_transport / 100,
+                )
+                st.session_state.scores = scores
+                st.session_state.workplace = workplace
+                st.session_state.salaire = salaire
+                st.session_state.filtered_points = filtered_points
+                st.session_state.map_mode = map_mode
+                st.rerun()
+            except Exception as e:
+                st.error(f"Erreur : {e}")
 
 if st.session_state.scores:
     st.divider()
@@ -394,6 +516,7 @@ if st.session_state.scores:
             "Score": d["score"],
             "Verdict": d["couleur"].capitalize(),
             "Annonces": d.get("nb_annonces", "?"),
+            "Types": ", ".join(f"{k}:{v}" for k, v in sorted(d.get("types", {}).items())),
         })
 
     df = pd.DataFrame(rows).sort_values("Score", ascending=False)

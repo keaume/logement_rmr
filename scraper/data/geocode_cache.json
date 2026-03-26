@@ -1,213 +1,186 @@
 {
+  "9435 rue Jean-Milot, LaSalle, QC, H8R 0C9, Québec, Canada": [
+    45.4304575,
+    -73.6464587
+  ],
   "Montreal, QC H2K 2R8, Québec, Canada": [
     45.5031824,
     -73.5698065
   ],
-  "1415 ave Papineau, Montreal, QC, H2K 0E7, Québec, Canada": [
-    45.5411417,
-    -73.5922794
-  ],
-  "5885, avenue Marc-Chagall, Côte-Saint-Luc, QC, H4W 0C1, Québec, Canada": [
-    45.4804052,
-    -73.6635251
+  "Boulevard Henri-Bourassa Est, Montréal, QC, Québec, Canada": [
+    45.63268,
+    -73.5708059
   ],
   "1569 rue St-Hubert, Montréal, QC, H2L 3Z1, Québec, Canada": [
     45.5164842,
     -73.5607613
   ],
-  "3210 - 3250 Forest Hill, Montreal, QC, H3V 1C8, Québec, Canada": null,
-  "650 rue Wellington, Montreal, QC, H3C 1T3, Québec, Canada": [
-    45.4984712,
-    -73.5550547
-  ],
-  "Montreal, QC H4V 1Y2, Québec, Canada": [
-    45.5031824,
-    -73.5698065
-  ],
-  "Anjou, QC H1K 3A3, Québec, Canada": [
-    45.6048982,
-    -73.5466723
-  ],
-  "5250 Charleroi, Montreal, QC, H1G 3A3, Québec, Canada": [
-    45.6004748,
-    -73.6235347
-  ],
-  "Montreal, QC H3S 1X4, Québec, Canada": [
-    45.5031824,
-    -73.5698065
-  ],
-  "2310 Rue de Bellechasse, Montréal, QC H2G 1R3, Québec, Canada": [
-    45.5455192,
-    -73.58958
-  ],
-  "Montreal, QC H3T 1K5, Québec, Canada": [
-    45.5031824,
-    -73.5698065
-  ],
-  "1155 Everett, Montreal, QC, H2R 1N2, Québec, Canada": [
-    45.5446314,
-    -73.6150824
-  ],
-  "3790 Rue Fleury, Montréal-Nord, QC, Québec, Canada": [
-    45.583921,
-    -73.6367104
-  ],
-  "3211 Beaubien Est, Montreal, QC, H1Y 1H6, Québec, Canada": [
-    45.55456,
-    -73.587108
-  ],
-  "2985 Rue Cousineau, Saint-Laurent, QC, Québec, Canada": [
-    45.5240915,
-    -73.7158932
-  ],
-  "8877 Lajeunesse, Montréal, QC, H2M 1R8, Québec, Canada": [
-    45.5475713,
-    -73.6411806
-  ],
-  "Montréal, QC H2C 3B3, Québec, Canada": [
-    45.5031824,
-    -73.5698065
-  ],
-  "4825 ch. de la Côte Ste-Catherine, Montreal, QC, H3W 1M4, Québec, Canada": [
-    45.4921628,
-    -73.633804
-  ],
-  "2000 Rue Remembrance, Lachine, QC, Québec, Canada": [
-    45.4381156,
-    -73.6826201
-  ],
-  "Montréal, QC H2S 2N7, Québec, Canada": [
-    45.5031824,
-    -73.5698065
-  ],
-  "Montreal, QC H3T 1K8, Québec, Canada": [
-    45.5031824,
-    -73.5698065
-  ],
-  "Montreal, QC H4P 1K8, Québec, Canada": [
-    45.5031824,
-    -73.5698065
-  ],
-  "2926 Rue Allard, Montréal, QC H4E 2M4, Canada, Québec, Canada": null,
-  "4140 Chemin de la Côte-Sainte-Catherine, Montréal, QC, H3T 1E3, Québec, Canada": [
-    45.4943597,
-    -73.6307622
-  ],
-  "465 Av. d&apos;Anvers, Montréal, QC H3N 1C2, Québec, Canada": null,
-  "Rue Ashton, Montréal, QC H4N 1B6, Québec, Canada": [
-    45.5299221,
-    -73.6710671
-  ],
-  "R. Saint-Denis, Montréal, QC H2R 2E9, Québec, Canada": [
-    45.541271,
-    -73.6245583
-  ],
-  "Montreal, QC H1V 3P9, Québec, Canada": [
-    45.5031824,
-    -73.5698065
-  ],
-  "Lachine, QC H8R 1R7, Québec, Canada": [
-    45.435114,
-    -73.6837987
-  ],
-  "10144  Lajeunesse, Montréal, QC, H3L 2E2, Québec, Canada": [
-    45.552714,
-    -73.6601671
-  ],
-  "Saint-Laurent, QC H4M 1H7, Québec, Canada": [
-    45.5088774,
-    -73.6875187
-  ],
-  "Montréal, QC H1T 2A8, Québec, Canada": [
-    45.5031824,
-    -73.5698065
-  ],
-  "Montréal, QC H2X 2Y6, Québec, Canada": [
-    45.5031824,
-    -73.5698065
-  ],
-  "Montreal, QC H3H 2G7, Québec, Canada": [
-    45.5031824,
-    -73.5698065
-  ],
-  "Rue Saint-Ferdinand, Montreal, QC H4C, Québec, Canada": null,
-  "Montréal, QC H2K 1G5, Québec, Canada": [
-    45.5031824,
-    -73.5698065
-  ],
-  "755 Montpellier, Saint Laurent, QC, H4L 4R1, Québec, Canada": [
-    45.5202384,
-    -73.6709585
-  ],
-  "Avenue Henri-Julien, Montréal, QC H2W 2J9, Québec, Canada": [
-    45.5391242,
-    -73.6223634
-  ],
-  "Verdun, QC H4G 1P5, Québec, Canada": [
-    45.459099,
-    -73.5731712
-  ],
-  "Verdun, QC H4G 1T2, Québec, Canada": [
-    45.459099,
-    -73.5731712
-  ],
-  "Montreal, QC H4C 3A9, Québec, Canada": [
-    45.5031824,
-    -73.5698065
-  ],
-  "Montreal, QC H3X 2C2, Québec, Canada": [
-    45.5031824,
-    -73.5698065
-  ],
-  "Montréal, QC H1A 4Y2, Québec, Canada": [
-    45.5031824,
-    -73.5698065
-  ],
-  "5510 Robinson, Côte Saint-Luc, QC, H4V 2P5, Québec, Canada": null,
   "235 rue Young, Montreal, QC, H3C 0Z6, Québec, Canada": [
     45.4931499,
     -73.5587901
   ],
-  "1011 blvd Shevchenko, LaSalle, QC, H8N 0H2, Québec, Canada": [
-    45.4306497,
-    -73.6102605
+  "Montréal, QC H2A 2V8, Québec, Canada": [
+    45.5031824,
+    -73.5698065
   ],
-  "1975 Maisonneuve Blvd West, Montreal, QC, H3H 1K4, Québec, Canada": null,
-  "2350 rue Saint-Patrick, Montreal, QC, H3K 0C5, Québec, Canada": [
-    45.4816029,
-    -73.5689945
+  "2940 Rue Cousineau, Saint-Laurent, QC, Québec, Canada": [
+    45.5232503,
+    -73.7154708
   ],
-  "808 2e Avenue, Lachine, QC, Québec, Canada": [
-    45.4431435,
-    -73.665797
+  "Montréal, QC H1V 1Z3, Québec, Canada": [
+    45.5031824,
+    -73.5698065
+  ],
+  "2929 rue Victoria, Lachine, QC, H4R 2C4, Québec, Canada": [
+    45.4358929,
+    -73.6889487
+  ],
+  "4625 Rue Clark, Montréal, QC H2T 2T3, Québec, Canada": [
+    45.5205866,
+    -73.5885712
+  ],
+  "Montréal, QC H1N 2M1, Québec, Canada": [
+    45.5031824,
+    -73.5698065
+  ],
+  "Montreal, QC H2A 2P9, Québec, Canada": [
+    45.5031824,
+    -73.5698065
+  ],
+  "Saint-Leonard, QC H1R 1W2, Canada, Québec, Canada": null,
+  "Lachine, QC H8S 0C9, Québec, Canada": [
+    45.435114,
+    -73.6837987
+  ],
+  "Montreal, QC H2Y 2E1, Québec, Canada": [
+    45.5031824,
+    -73.5698065
+  ],
+  "Pointe-aux-Trembles, QC H1B 4S4, Québec, Canada": [
+    45.6747302,
+    -73.5062328
+  ],
+  "Montreal, QC H3T 1E7, Québec, Canada": [
+    45.5031824,
+    -73.5698065
+  ],
+  "Boulevard Thimens, Montreal, QC, Québec, Canada": [
+    45.5097567,
+    -73.6973382
+  ],
+  "130 Prince Arthur Street West, Montreal, QC, Québec, Canada": null,
+  "Montréal, QC H1X 2E2, Québec, Canada": [
+    45.5031824,
+    -73.5698065
+  ],
+  "Montréal, QC H1N 1R6, Québec, Canada": [
+    45.5031824,
+    -73.5698065
+  ],
+  "Montréal, QC H1B 3B1, Québec, Canada": [
+    45.5031824,
+    -73.5698065
+  ],
+  "Lachine, QC H8R 1M4, Québec, Canada": [
+    45.435114,
+    -73.6837987
+  ],
+  "2990 Rue Cousineau, Montreal, QC, Québec, Canada": [
+    45.5238311,
+    -73.7163957
+  ],
+  "Montreal, QC H2B 2S1, Québec, Canada": [
+    45.5031824,
+    -73.5698065
+  ],
+  "5180 Philippe Lalonde, Montréal, QC, H4C 0C2, Québec, Canada": null,
+  "5915 Rue Souart, Montréal, QC, Québec, Canada": [
+    45.5028494,
+    -73.6277842
+  ],
+  "4875 Dufferin, Montréal, QC, H3X 2E5, Québec, Canada": [
+    45.4786349,
+    -73.6294101
+  ],
+  "Montréal, QC H1V 2L4, Québec, Canada": [
+    45.5031824,
+    -73.5698065
+  ],
+  "Saint-Laurent, QC H4N 1E3, Québec, Canada": [
+    45.5088774,
+    -73.6875187
+  ],
+  "4e Avenue, Verdun, Montreal, QC, Québec, Canada": [
+    45.456699,
+    -73.5678839
+  ],
+  "Montréal, QC H1T 3G2, Québec, Canada": [
+    45.5031824,
+    -73.5698065
+  ],
+  "Montreal, QC H4A 1T1, Québec, Canada": [
+    45.5031824,
+    -73.5698065
+  ],
+  "Montréal, QC H1T 2T8, Québec, Canada": [
+    45.5031824,
+    -73.5698065
+  ],
+  "15800, rue Sherbrooke Est, Montréal Pointe-aux-Trembles, QC, H1A 0G1, Québec, Canada": [
+    45.6581083,
+    -73.5087895
+  ],
+  "Saint-Laurent, QC H4R 1K4, Québec, Canada": [
+    45.5088774,
+    -73.6875187
+  ],
+  "Montreal, QC H4J 1N9, Québec, Canada": [
+    45.5031824,
+    -73.5698065
+  ],
+  "Montreal, QC H2L 1T3, Québec, Canada": [
+    45.5031824,
+    -73.5698065
+  ],
+  "Montréal, QC H4C 1Y2, Québec, Canada": [
+    45.5031824,
+    -73.5698065
+  ],
+  "1190 Du Fort, Montreal, QC, H3H 2B5, Québec, Canada": [
+    45.4905402,
+    -73.5796073
+  ],
+  "2051 rue Lapierre, LaSalle Montréal, QC, H8N 1A6, Québec, Canada": [
+    45.4371961,
+    -73.6154782
+  ],
+  "Rosemont-La Petite-Patrie, Montreal, QC H1T 3L7, Québec, Canada": [
+    45.5507465,
+    -73.5822897
+  ],
+  "2191 Boul. Édouard Montpetit, montreal, QC, H3T 1J3, Québec, Canada": [
+    45.5083203,
+    -73.6148416
+  ],
+  "5885, avenue Marc-Chagall, Côte-Saint-Luc, QC, H4W 0C1, Québec, Canada": [
+    45.4804052,
+    -73.6635251
   ],
   "3420 boul Saint-Joseph, Montreal, QC, H1X 0A6, Québec, Canada": [
     45.4335121,
     -73.6943711
   ],
-  "Montreal, QC H2K 2T8, Québec, Canada": [
+  "3455 Côte-des-Neiges, Montreal, QC, H3H 1T6, Québec, Canada": [
+    45.4988496,
+    -73.6239598
+  ],
+  "Montreal, QC H4B 2X7, Québec, Canada": [
     45.5031824,
     -73.5698065
   ],
-  "3555, rue Berri, Montreal, QC, H2L 4G4, Québec, Canada": [
-    45.5188831,
-    -73.5681054
-  ],
-  "1461 rue du College, Montréal, QC, H4L 2L8, Québec, Canada": [
-    45.5101093,
-    -73.674889
-  ],
-  "Rue Saint-Denis, Montréal, QC H2R 2E5, Québec, Canada": [
-    45.5395966,
-    -73.6187789
-  ],
-  "2125 rue Ward, Montreal, QC, H4M 1T6, Québec, Canada": [
-    45.5003171,
-    -73.6770494
-  ],
-  "Montreal, QC H2K 3V4, Québec, Canada": [
-    45.5031824,
-    -73.5698065
+  "6060 Jean Talon Est, St-Léonard, QC, H1S 3A9, Québec, Canada": [
+    45.5878458,
+    -73.57797
   ],
   "605 rue Fullum, Montreal, QC, H2K 0G4, Québec, Canada": [
     45.5264925,
@@ -217,145 +190,114 @@
     45.5502326,
     -73.5333096
   ],
-  "Montreal, QC H4B 2X7, Québec, Canada": [
+  "1325 rue Saint Andre, Montreal, QC, H2L 0G6, Québec, Canada": [
+    45.5163904,
+    -73.5577014
+  ],
+  "82A Rue Fleury O, Montréal, H3L 1T2, Québec, Canada": null,
+  "Montreal, QC H4A 3E6, Québec, Canada": [
     45.5031824,
     -73.5698065
   ],
-  "1300 Côte Vertu, Saint-Laurent, QC, H4L 1Y9, Québec, Canada": [
-    45.5162573,
-    -73.6795182
+  "5775 Cavendish Boulevard, Côte Saint-Luc, QC, H4W 3L9, Québec, Canada": [
+    45.4766182,
+    -73.6616251
   ],
-  "1250 avenue Thérèse-Lavoie-Roux, Montreal, QC, H2V 0B2, Québec, Canada": [
-    45.5232396,
-    -73.6169461
+  "2125 rue Ward, Montreal, QC, H4M 1T6, Québec, Canada": [
+    45.5003171,
+    -73.6770494
+  ],
+  "5605 Pierre-de Coubertin Avenue, Montreal, QC, Québec, Canada": [
+    45.5720892,
+    -73.5405005
+  ],
+  "Lachine, QC H8T 2C8, Québec, Canada": [
+    45.435114,
+    -73.6837987
+  ],
+  "1957 rue Hunter, Montreal, QC, H3J 2N9, Québec, Canada": [
+    45.4864106,
+    -73.5687939
+  ],
+  "2350 rue Saint-Patrick, Montreal, QC, H3K 0C5, Québec, Canada": [
+    45.4816029,
+    -73.5689945
+  ],
+  "Rue Saint-Hubert, Montreal, QC, Québec, Canada": [
+    45.5208869,
+    -73.5707736
   ],
   "1060 Crémazie Ouest, Montreal, QC, H3N 1A4, Québec, Canada": null,
   "3468 Drummond, Montreal, QC, H3G 1Y4, Québec, Canada": [
     45.5014984,
     -73.5806428
   ],
-  "9379 boul. Lasalle, Lasalle, QC, H8R 2M8, Québec, Canada": [
-    45.4189015,
-    -73.6461019
-  ],
-  "6201 Sherbrooke Ouest, Notre-Dame-de-Grâce, QC, H4B 1M5, Québec, Canada": [
-    45.4539774,
-    -73.6422802
-  ],
-  "5228 Av Bourbonnière, Montréal, H1X 2M9, Québec, Canada": [
-    45.5558415,
-    -73.5681792
-  ],
-  "1705 rue William, Montreal, QC, H3J 1R3, Québec, Canada": [
-    45.4880507,
-    -73.5666915
-  ],
-  "9435 rue Jean-Milot, LaSalle, QC, H8R 0C9, Québec, Canada": [
-    45.4304575,
-    -73.6464587
-  ],
-  "500 rue Sauvé Est, Montreal, QC, H3L 0A9, Québec, Canada": [
-    45.5511427,
-    -73.6550219
-  ],
-  "Lorraine, QC J6Z 4W2, Québec, Canada": [
-    45.6704733,
-    -73.7887505
-  ],
-  "Boulevard Henri-Bourassa Est, Montréal, QC, Québec, Canada": [
-    45.5658667,
-    -73.6605495
-  ],
-  "6525 Rue Sherbrooke O, Montréal, QC H4B 1N4, Québec, Canada": null,
-  "5775 Cavendish Boulevard, Côte Saint-Luc, QC, H4W 3L9, Québec, Canada": [
-    45.4766182,
-    -73.6616251
-  ],
-  "1 Blvd. De Maisonneuve Ouest, Montréal, QC H2X 0E3, Canada, Québec, Canada": null,
-  "1999 rue William, Montreal, QC, H3J 1R9, Québec, Canada": [
-    45.4861047,
-    -73.5686193
-  ],
-  "Montréal, QC H2R 2E8, Québec, Canada": [
+  "Montreal, QC H2K 2T8, Québec, Canada": [
     45.5031824,
     -73.5698065
   ],
-  "Montreal, QC H2L 3B6, Québec, Canada": [
-    45.5031824,
-    -73.5698065
-  ],
-  "Montréal, QC H2M 1P4, Québec, Canada": [
-    45.5031824,
-    -73.5698065
-  ],
-  "135 place de la Côte-Vertu, Saint Laurent, QC, H4N 1G4, Québec, Canada": [
-    45.5290385,
-    -73.6677657
-  ],
-  "1957 rue Hunter, Montreal, QC, H3J 2N9, Québec, Canada": [
-    45.4864106,
-    -73.5687939
-  ],
-  "Rue Saint-Hubert, Montreal, QC, Québec, Canada": [
-    45.5230193,
-    -73.5754711
-  ],
-  "Montreal, QC H4P 1P4, Québec, Canada": [
-    45.5031824,
-    -73.5698065
-  ],
-  "3455 Côte-des-Neiges, Montreal, QC, H3H 1T6, Québec, Canada": [
-    45.4988496,
-    -73.6239598
-  ],
-  "Montreal, QC H2S 2M3, Québec, Canada": [
-    45.5031824,
-    -73.5698065
-  ],
-  "82A Rue Fleury O, Montréal, H3L 1T2, Québec, Canada": null,
-  "6376 Boulevard Gouin Ouest, Montreal, QC, Québec, Canada": [
-    45.5292129,
-    -73.7235334
-  ],
-  "2865 Kent, Montreal, QC, H3S 1M8, Québec, Canada": [
-    45.5086247,
-    -73.6274179
-  ],
-  "Montreal, QC H1W 2P3, Québec, Canada": [
-    45.5031824,
-    -73.5698065
-  ],
-  "1325 rue Saint Andre, Montreal, QC, H2L 0G6, Québec, Canada": [
-    45.5163904,
-    -73.5577014
-  ],
-  "2285 Saint-Mathieu Street, Montreal, QC, H3H 2J7, Québec, Canada": null,
-  "11666 boul. St-Germain, Montreal, QC, H4J 1Z7, Québec, Canada": [
-    45.5268726,
-    -73.6998867
-  ],
-  "1650 Av. Lincoln, Montréal, QC H3H 1H1, Québec, Canada": [
-    45.4955036,
-    -73.5806121
-  ],
-  "12210 Boulevard de Pierrefonds, Pierrefonds, QC, H9A 2X7, Québec, Canada": [
-    45.503664,
-    -73.8261595
-  ],
-  "230 rue Dominion, Montreal, QC, H3J 2X1, Québec, Canada": [
-    45.483543,
-    -73.5728289
+  "1011 blvd Shevchenko, LaSalle, QC, H8N 0H2, Québec, Canada": [
+    45.4306497,
+    -73.6102605
   ],
   "Montréal, QC H2E 2G1, Québec, Canada": [
     45.5031824,
     -73.5698065
   ],
-  "Montreal, QC H3S 1R1, Québec, Canada": [
+  "1415 ave Papineau, Montreal, QC, H2K 0E7, Québec, Canada": [
+    45.5411417,
+    -73.5922794
+  ],
+  "5510 Robinson, Côte Saint-Luc, QC, H4V 2P5, Québec, Canada": null,
+  "1211 rue Berri, Montreal, QC, H2L 0H6, Québec, Canada": [
+    45.514261,
+    -73.5583057
+  ],
+  "1445 rue Clark, Montreal, QC, H2X 2R1, Québec, Canada": [
+    45.5102638,
+    -73.5652105
+  ],
+  "Montreal, QC H2K 3V4, Québec, Canada": [
     45.5031824,
     -73.5698065
   ],
-  "Montréal-Est, QC H1L, Québec, Canada": null,
-  "Montréal, QC H1V 2E2, Québec, Canada": [
+  "2865 Kent, Montreal, QC, H3S 1M8, Québec, Canada": [
+    45.5086247,
+    -73.6274179
+  ],
+  "650 rue Wellington, Montreal, QC, H3C 1T3, Québec, Canada": [
+    45.4984712,
+    -73.5550547
+  ],
+  "11666 boul. St-Germain, Montreal, QC, H4J 1Z7, Québec, Canada": [
+    45.5268726,
+    -73.6998867
+  ],
+  "Saint-Laurent, QC H4M 1H7, Québec, Canada": [
+    45.5088774,
+    -73.6875187
+  ],
+  "808 2e Avenue, Lachine, QC, Québec, Canada": [
+    45.4431435,
+    -73.665797
+  ],
+  "1650 Av. Lincoln, Montréal, QC H3H 1H1, Québec, Canada": [
+    45.4955036,
+    -73.5806121
+  ],
+  "5960 Bd Saint-Michel, Montréal, QC H1Y 2E5, Québec, Canada": [
+    45.5534963,
+    -73.5818568
+  ],
+  "3555, rue Berri, Montreal, QC, H2L 4G4, Québec, Canada": [
+    45.5188831,
+    -73.5681054
+  ],
+  "1250 avenue Thérèse-Lavoie-Roux, Montreal, QC, H2V 0B2, Québec, Canada": [
+    45.5232396,
+    -73.6169461
+  ],
+  "Montreal, QC H1Y 1S6, Québec, Canada": [
     45.5031824,
     -73.5698065
   ],
@@ -363,80 +305,115 @@
     45.5117885,
     -73.5708975
   ],
-  "Montréal, QC H2A 3J2, Québec, Canada": [
+  "Montreal, QC H2H 1B4, Québec, Canada": [
     45.5031824,
     -73.5698065
   ],
-  "Montreal, QC H1Y 2E1, Québec, Canada": [
+  "Montréal, QC H2R 2E8, Québec, Canada": [
     45.5031824,
     -73.5698065
   ],
-  "240 Notre-Dame O, Montreal, QC, H2Y 1T3, Québec, Canada": null,
-  "55 Laframboise, Saint-Laurent, QC, H4N 1P2, Québec, Canada": [
-    45.5311858,
-    -73.6780661
-  ],
-  "4775 Rue Sherbrooke O, Westmount, QC H3Z 1G5, Québec, Canada": null,
-  "6060 Jean Talon Est, St-Léonard, QC, H1S 3A9, Québec, Canada": [
-    45.5878458,
-    -73.57797
-  ],
-  "10150 Lajeunesse, Montréal, QC, H3L 2E2, Québec, Canada": [
-    45.5527904,
-    -73.6604077
-  ],
-  "Montreal, QC H2Y 3Z2, Québec, Canada": [
-    45.5031824,
-    -73.5698065
-  ],
-  "Montréal, QC H2S 2R9, Québec, Canada": [
-    45.5031824,
-    -73.5698065
-  ],
-  "Montréal, QC H1W 2V1, Québec, Canada": [
-    45.5031824,
-    -73.5698065
-  ],
-  "Montreal, QC H2E 1N1, Québec, Canada": [
-    45.5031824,
-    -73.5698065
-  ],
-  "Saint-Leonard, QC H1S 2G7, Québec, Canada": [
-    45.58671,
-    -73.5969488
-  ],
-  "Montreal, QC H4A 3E6, Québec, Canada": [
-    45.5031824,
-    -73.5698065
-  ],
-  "Montréal, QC H1L 5L1, Québec, Canada": [
-    45.5031824,
-    -73.5698065
-  ],
-  "1445 rue Clark, Montreal, QC, H2X 2R1, Québec, Canada": [
-    45.5102638,
-    -73.5652105
-  ],
-  "Montreal, QC H3L, Québec, Canada": null,
-  "Lachine, QC H8T 2C8, Québec, Canada": [
-    45.435114,
-    -73.6837987
-  ],
-  "4300 metropolitain, Montréal, QC, H1S 1A2, Québec, Canada": [
-    45.6431917,
-    -73.5331239
+  "Lorraine, QC J6Z 4W2, Québec, Canada": [
+    45.6704733,
+    -73.7887505
   ],
   "Rue Parthenais, Montréal, QC, h2h2g6, Québec, Canada": [
     45.5395851,
     -73.5782943
   ],
-  "1211 rue Berri, Montreal, QC, H2L 0H6, Québec, Canada": [
-    45.514261,
-    -73.5583057
+  "Montréal, QC H1L 5L1, Québec, Canada": [
+    45.5031824,
+    -73.5698065
   ],
-  "4089 avenue de chateaubriand": [
-    45.5225584,
-    -73.5753582
+  "Montréal, QC H2M 1P4, Québec, Canada": [
+    45.5031824,
+    -73.5698065
+  ],
+  "4775 Rue Sherbrooke O, Westmount, QC H3Z 1G5, Québec, Canada": null,
+  "Montreal, QC H2L 3B6, Québec, Canada": [
+    45.5031824,
+    -73.5698065
+  ],
+  "240 Notre-Dame O, Montreal, QC, H2Y 1T3, Québec, Canada": null,
+  "Montreal, QC H3S 1R1, Québec, Canada": [
+    45.5031824,
+    -73.5698065
+  ],
+  "3435 Rue Drummond 3435 Rue Drummond, Montreal, QC, H3G 1X8, Québec, Canada": null,
+  "1975 Maisonneuve Blvd West, Montreal, QC, H3H 1K4, Québec, Canada": null,
+  "1999 rue William, Montreal, QC, H3J 1R9, Québec, Canada": [
+    45.4861047,
+    -73.5686193
+  ],
+  "2475 Av. Van Horne, Montréal, QC H3S 1P4, Québec, Canada": [
+    45.5112353,
+    -73.6235749
+  ],
+  "55 Laframboise, Saint-Laurent, QC, H4N 1P2, Québec, Canada": [
+    45.5311858,
+    -73.6780661
+  ],
+  "Montréal, QC H2A 3J2, Québec, Canada": [
+    45.5031824,
+    -73.5698065
+  ],
+  "1705 rue William, Montreal, QC, H3J 1R3, Québec, Canada": [
+    45.4880507,
+    -73.5666915
+  ],
+  "Montreal, QC H1W 2P3, Québec, Canada": [
+    45.5031824,
+    -73.5698065
+  ],
+  "Montreal, QC H4P 1P4, Québec, Canada": [
+    45.5031824,
+    -73.5698065
+  ],
+  "230 rue Dominion, Montreal, QC, H3J 2X1, Québec, Canada": [
+    45.483543,
+    -73.5728289
+  ],
+  "3210 - 3250 Forest Hill, Montreal, QC, H3V 1C8, Québec, Canada": null,
+  "6201 Sherbrooke Ouest, Notre-Dame-de-Grâce, QC, H4B 1M5, Québec, Canada": [
+    45.4539774,
+    -73.6422802
+  ],
+  "Montreal, QC H2S 2M3, Québec, Canada": [
+    45.5031824,
+    -73.5698065
+  ],
+  "5228 Av Bourbonnière, Montréal, H1X 2M9, Québec, Canada": [
+    45.5558415,
+    -73.5681792
+  ],
+  "Montreal, QC H1Y 2E1, Québec, Canada": [
+    45.5031824,
+    -73.5698065
+  ],
+  "Montréal, QC H2W 2C1, Québec, Canada": [
+    45.5031824,
+    -73.5698065
+  ],
+  "Rue Saint-Denis, Montréal, QC H2R 2E5, Québec, Canada": [
+    45.5392183,
+    -73.6174863
+  ],
+  "500 rue Sauvé Est, Montreal, QC, H3L 0A9, Québec, Canada": [
+    45.5511427,
+    -73.6550219
+  ],
+  "2285 Saint-Mathieu Street, Montreal, QC, H3H 2J7, Québec, Canada": null,
+  "9379 boul. Lasalle, Lasalle, QC, H8R 2M8, Québec, Canada": [
+    45.4189015,
+    -73.6461019
+  ],
+  "6376 Boulevard Gouin Ouest, Montreal, QC, Québec, Canada": [
+    45.5292129,
+    -73.7235334
+  ],
+  "1000 rue De La Gauchetière, Montréal": [
+    45.6628799,
+    -73.4980112
   ],
   "Ville-Marie, Montréal, Québec, Canada": [
     45.5010803,
@@ -446,68 +423,12 @@
     45.5088774,
     -73.6875187
   ],
-  "Le Sud-Ouest, Montréal, Québec, Canada": [
-    45.484268,
-    -73.5649867
-  ],
   "Lachine, Montréal, Québec, Canada": [
     45.435114,
     -73.6837987
   ],
-  "Côte-Saint-Luc, Montréal, Québec, Canada": [
-    45.4772716,
-    -73.6637524
-  ],
-  "Ahuntsic-Cartierville, Montréal, Québec, Canada": [
-    45.5418621,
-    -73.6803193
-  ],
-  "LaSalle, Montréal, Québec, Canada": [
-    45.4325141,
-    -73.6292667
-  ],
-  "Le Plateau-Mont-Royal, Montréal, Québec, Canada": [
-    45.5218361,
-    -73.5821731
-  ],
-  "Côte-des-Neiges-Notre-Dame-de-Grâce, Montréal, Québec, Canada": [
-    45.4821002,
-    -73.6249638
-  ],
-  "Outremont, Montréal, Québec, Canada": [
-    45.5186167,
-    -73.6068856
-  ],
-  "Rosemont-La Petite-Patrie, Montréal, Québec, Canada": [
-    45.5507465,
-    -73.5822897
-  ],
-  "Villeray-Saint-Michel-Parc-Extension, Montréal, Québec, Canada": [
-    45.5371039,
-    -73.6251264
-  ],
-  "Verdun, Montréal, Québec, Canada": [
-    45.459099,
-    -73.5731712
-  ],
-  "Montréal-Nord, Montréal, Québec, Canada": [
-    45.5938992,
-    -73.6376062
-  ],
-  "Saint-Léonard, Montréal, Québec, Canada": [
-    45.58671,
-    -73.5969488
-  ],
-  "Rivière-des-Prairies-Pointe-aux-Trembles, Montréal, Québec, Canada": [
-    45.6606073,
-    -73.5253145
-  ],
-  "1000 rue De La Gauchetière, Montréal": [
-    45.6628799,
-    -73.4980112
-  ],
-  "4189 avenue de chateaubriand": [
-    45.5377753,
-    -73.6089051
+  "4089 avenue de chateaubriand": [
+    45.5225584,
+    -73.5753582
   ]
 }
