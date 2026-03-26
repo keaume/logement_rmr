@@ -1,0 +1,162 @@
+{
+  "Ville-Marie": {
+    "loyer_median": 1650,
+    "loyer_moyen": 1701,
+    "loyer_min": 720.0,
+    "loyer_max": 2945.0,
+    "nb_annonces": 57,
+    "lat": 45.506395,
+    "lon": -73.56642,
+    "ville": "Montréal"
+  },
+  "Saint-Laurent": {
+    "loyer_median": 1395,
+    "loyer_moyen": 1559,
+    "loyer_min": 820.0,
+    "loyer_max": 2725.0,
+    "nb_annonces": 13,
+    "lat": 45.516919,
+    "lon": -73.678119,
+    "ville": "Montréal"
+  },
+  "Le Sud-Ouest": {
+    "loyer_median": 2190,
+    "loyer_moyen": 2160,
+    "loyer_min": 1430.0,
+    "loyer_max": 3350.0,
+    "nb_annonces": 11,
+    "lat": 45.487644,
+    "lon": -73.566228,
+    "ville": "Montréal"
+  },
+  "Lachine": {
+    "loyer_median": 1850,
+    "loyer_moyen": 1816,
+    "loyer_min": 1295.0,
+    "loyer_max": 2500.0,
+    "nb_annonces": 9,
+    "lat": 45.43545,
+    "lon": -73.687541,
+    "ville": "Montréal"
+  },
+  "Côte-Saint-Luc": {
+    "loyer_median": 2102,
+    "loyer_moyen": 2273,
+    "loyer_min": 1745.0,
+    "loyer_max": 3165.0,
+    "nb_annonces": 8,
+    "lat": 45.478512,
+    "lon": -73.662575,
+    "ville": "Montréal"
+  },
+  "Ahuntsic-Cartierville": {
+    "loyer_median": 1200,
+    "loyer_moyen": 1207,
+    "loyer_min": 925.0,
+    "loyer_max": 1585.0,
+    "nb_annonces": 7,
+    "lat": 45.546596,
+    "lon": -73.671535,
+    "ville": "Montréal"
+  },
+  "LaSalle": {
+    "loyer_median": 1620,
+    "loyer_moyen": 1689,
+    "loyer_min": 1295.0,
+    "loyer_max": 2330.0,
+    "nb_annonces": 7,
+    "lat": 45.428862,
+    "lon": -73.636065,
+    "ville": "Montréal"
+  },
+  "Le Plateau-Mont-Royal": {
+    "loyer_median": 1350,
+    "loyer_moyen": 1266,
+    "loyer_min": 800.0,
+    "loyer_max": 1745.0,
+    "nb_annonces": 7,
+    "lat": 45.520404,
+    "lon": -73.571411,
+    "ville": "Montréal"
+  },
+  "Côte-des-Neiges-Notre-Dame-de-Grâce": {
+    "loyer_median": 1322,
+    "loyer_moyen": 1358,
+    "loyer_min": 1075.0,
+    "loyer_max": 1800.0,
+    "nb_annonces": 6,
+    "lat": 45.492766,
+    "lon": -73.63094,
+    "ville": "Montréal"
+  },
+  "Outremont": {
+    "loyer_median": 2048,
+    "loyer_moyen": 2241,
+    "loyer_min": 1460.0,
+    "loyer_max": 3710.0,
+    "nb_annonces": 6,
+    "lat": 45.52324,
+    "lon": -73.616946,
+    "ville": "Montréal"
+  },
+  "Rosemont-La Petite-Patrie": {
+    "loyer_median": 1450,
+    "loyer_moyen": 1419,
+    "loyer_min": 895.0,
+    "loyer_max": 1675.0,
+    "nb_annonces": 5,
+    "lat": 45.547641,
+    "lon": -73.585885,
+    "ville": "Montréal"
+  },
+  "Villeray-Saint-Michel-Parc-Extension": {
+    "loyer_median": 1645,
+    "loyer_moyen": 1710,
+    "loyer_min": 950.0,
+    "loyer_max": 2600.0,
+    "nb_annonces": 4,
+    "lat": 45.541156,
+    "lon": -73.620196,
+    "ville": "Montréal"
+  },
+  "Verdun": {
+    "loyer_median": 1775,
+    "loyer_moyen": 1722,
+    "loyer_min": 1595.0,
+    "loyer_max": 1795.0,
+    "nb_annonces": 3,
+    "lat": 45.459099,
+    "lon": -73.573171,
+    "ville": "Montréal"
+  },
+  "Montréal-Nord": {
+    "loyer_median": 1662,
+    "loyer_moyen": 1662,
+    "loyer_min": 925.0,
+    "loyer_max": 2400.0,
+    "nb_annonces": 2,
+    "lat": 45.592198,
+    "lon": -73.630123,
+    "ville": "Montréal"
+  },
+  "Saint-Léonard": {
+    "loyer_median": 1938,
+    "loyer_moyen": 1938,
+    "loyer_min": 1880.0,
+    "loyer_max": 1995.0,
+    "nb_annonces": 2,
+    "lat": 45.587278,
+    "lon": -73.587459,
+    "ville": "Montréal"
+  },
+  "Rivière-des-Prairies-Pointe-aux-Trembles": {
+    "loyer_median": 1188,
+    "loyer_moyen": 1188,
+    "loyer_min": 950.0,
+    "loyer_max": 1425.0,
+    "nb_annonces": 2,
+    "lat": 45.643192,
+    "lon": -73.533124,
+    "ville": "Montréal"
+  }
+}
