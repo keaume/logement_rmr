@@ -13,7 +13,8 @@ import pandas as pd
 import streamlit as st
 from streamlit_folium import st_folium
 
-sys.path.insert(0, str(Path(__file__).parent.parent / "scraper"))
+BASE_DIR = Path(__file__).resolve().parent.parent
+sys.path.append(str(BASE_DIR / "scraper"))
 from transit_scorer import (
     compute_all_scores,
     geocode_address,
