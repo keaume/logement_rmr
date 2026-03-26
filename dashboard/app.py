@@ -13,8 +13,11 @@ import pandas as pd
 import streamlit as st
 from streamlit_folium import st_folium
 
-BASE_DIR = Path(__file__).resolve().parent.parent
-sys.path.append(str(BASE_DIR / "scraper"))
+BASE_DIR = Path(__file__).resolve().parents[1]
+SCRAPER_DIR = BASE_DIR / "scraper"
+
+sys.path.append(str(SCRAPER_DIR))
+
 from transit_scorer import (
     compute_all_scores,
     geocode_address,
@@ -22,11 +25,10 @@ from transit_scorer import (
     GEOCODE_CACHE_PATH,
 )
 
-# ── Paths ─────────────────────────────────────────────────────────────────────
 
-BASE_DIR = Path(__file__).resolve().parent.parent
-LOYERS_PATH = BASE_DIR / "scraper" / "data" / "loyers_par_quartier.json"
-GEOJSON_PATH = BASE_DIR / "scraper" / "data" / "quartiers_rmr.geojson.json"
+# Paths
+LOYERS_PATH = SCRAPER_DIR / "data" / "loyers_par_quartier.json"
+GEOJSON_PATH = SCRAPER_DIR / "data" / "quartiers_rmr.geojson.json"
 
 # ── Page config ───────────────────────────────────────────────────────────────
 
