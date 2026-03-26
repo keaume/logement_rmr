@@ -42,6 +42,11 @@ st.set_page_config(
 st.markdown("""
 <style>
     .main { background: #0f1117; }
+    .block-container { padding-top: 0.5rem !important; padding-left: 1rem !important; padding-right: 1rem !important; }
+    header[data-testid="stHeader"] { display: none !important; }
+    #MainMenu { display: none !important; }
+    footer { display: none !important; }
+    .stDeployButton { display: none !important; }
     .metric-card {
         background: #1a1d27;
         border-radius: 12px;
@@ -346,10 +351,6 @@ def make_map(scores, geojson_data, cache_points, cache, map_mode, workplace_addr
 
 # ── App ───────────────────────────────────────────────────────────────────────
 
-st.markdown("# 🏠 Carte Loyer × Pouvoir d'achat — RMR Montréal")
-st.markdown("*Entrez votre salaire et votre lieu de travail pour voir les zones les plus soutenables.*")
-st.divider()
-
 loyers_raw   = load_loyers()
 geojson_data = load_geojson()
 cache_raw    = load_cache()
@@ -387,7 +388,9 @@ with st.sidebar:
     map_mode = st.radio("🗺️ Mode carte", ["Quartiers", "Fondu"], index=0)
     calculer = st.button("🔍 Calculer", use_container_width=True)
 
-col_map, col_stats = st.columns([3, 1])
+st.markdown("## 🏠 Carte Loyer × Pouvoir d’achat — RMR Montréal")
+
+col_map, col_stats = st.columns([4, 1])
 
 with col_map:
     m = make_map(
@@ -398,7 +401,7 @@ with col_map:
         map_mode=st.session_state.map_mode,
         workplace_address=st.session_state.workplace if st.session_state.scores else None,
     )
-    st_folium(m, height=620, use_container_width=True)
+    st_folium(m, height=780, use_container_width=True)
 
 with col_stats:
     if st.session_state.scores:
@@ -450,7 +453,6 @@ with col_stats:
             """, unsafe_allow_html=True)
     else:
         st.info("👈 Renseigne tes paramètres puis clique **Calculer**.")
-
 # ── Calcul ────────────────────────────────────────────────────────────────────
 
 if calculer and workplace:
@@ -496,7 +498,7 @@ if st.session_state.scores:
             "P75 ($)":             d.get("loyer_p75", ""),
             "% du revenu":         f"{d['ratio_loyer']}%",
             "Trajet (min)":        d.get("temps_trajet_min", "?"),
-            "Score":               round(d["score"], 1),
+            "Score":               f'{round(float(d["score"]), 1):.1f}',
             "Verdict":             d["couleur"].capitalize(),
             "Annonces":            d.get("nb_annonces", "?"),
             "Types":               ", ".join(f"{k}:{v}" for k, v in sorted(d.get("types", {}).items())),
